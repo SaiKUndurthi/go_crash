@@ -12,6 +12,9 @@ func greeting(name string) string {
 }
 
 func main() {
+
+	fruit := [2]string{"Apple", "Bananna"}
+	veggieSlice := []string{"Brocoli", "Carrot", "Beans"}
 	var name = "Sai"
 	var num = 3
 	var isCool = true
@@ -22,6 +25,8 @@ func main() {
 	fmt.Println(name1, email)
 	fmt.Printf("%T\n", num)
 	fmt.Printf("%T\n", isCool)
+
+	fmt.Println(fruit[0], fruit[1], veggieSlice)
 
 	fmt.Println(math.Floor(3.676444))
 
