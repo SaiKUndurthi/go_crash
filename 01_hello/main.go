@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+
+	"github.com/SaiKUndurthi/go_crash/01_hello/strutil"
+)
 
 func main() {
 	var name = "Sai"
@@ -13,4 +18,7 @@ func main() {
 	fmt.Println(name1, email)
 	fmt.Printf("%T\n", num)
 	fmt.Printf("%T\n", isCool)
+
+	fmt.Println(math.Floor(3.676444))
+	fmt.Println(strutil.Reverse("bye"))
 }
