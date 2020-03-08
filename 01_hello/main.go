@@ -7,6 +7,10 @@ import (
 	"github.com/SaiKUndurthi/go_crash/01_hello/strutil"
 )
 
+func greeting(name string) string {
+	return "Hello " + name
+}
+
 func main() {
 	var name = "Sai"
 	var num = 3
@@ -20,5 +24,8 @@ func main() {
 	fmt.Printf("%T\n", isCool)
 
 	fmt.Println(math.Floor(3.676444))
+
+	fmt.Println(greeting("go user"))
 	fmt.Println(strutil.Reverse("bye"))
+
 }
