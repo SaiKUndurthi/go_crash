@@ -51,4 +51,17 @@ func main() {
 		}
 	}
 
+	//maps
+	emails := make(map[string]string)
+
+	emails["test"] = "test@mail.com"
+	emails["testuser"] = "test@user.com"
+
+	fmt.Println(emails["test"])
+
+	ids := []int{23, 34, 4, 44, 24}
+	for i, id := range ids {
+		fmt.Printf("%d -ID : %d\n", i, id)
+	}
+
 }
