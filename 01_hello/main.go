@@ -38,4 +38,17 @@ func main() {
 		fmt.Println(i)
 	}
 
+	//FizzBuzz
+	for i := 1; i <= 100; i++ {
+		if i%15 == 0 {
+			fmt.Printf("Number is %d FizzBuzz\n", i)
+		} else if i%3 == 0 {
+			fmt.Printf("Number is %d Fizz\n", i)
+		} else if i%5 == 0 {
+			fmt.Printf("Number is %d Buzz\n", i)
+		} else {
+			fmt.Printf("Number is %d\n", i)
+		}
+	}
+
 }
