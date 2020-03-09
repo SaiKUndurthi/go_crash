@@ -17,6 +17,7 @@ func main() {
 	veggieSlice := []string{"Brocoli", "Carrot", "Beans"}
 	var name = "Sai"
 	var num = 3
+	// i := 1
 	var isCool = true
 	const notCool = false
 	// notCool = true ---> can't be assigned as it's a const
@@ -32,5 +33,9 @@ func main() {
 
 	fmt.Println(greeting("go user"))
 	fmt.Println(strutil.Reverse("bye"))
+
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
 
 }
