@@ -64,4 +64,24 @@ func main() {
 		fmt.Printf("%d -ID : %d\n", i, id)
 	}
 
+	// range returns two integers ID and the value assigned to it.
+	for _, id := range ids {
+		fmt.Printf("ID : %d\n", id)
+	}
+
+	sum := 0
+	for _, id := range ids {
+		sum += id
+	}
+	fmt.Println("Sum ", sum)
+
+	a := 5
+	b := &a
+
+	fmt.Printf("%d and the address of where  it is stored %d\n", a, b)
+	fmt.Printf("type of the pointer %T\n", b)
+	fmt.Printf("Value at the address %d\n", *b)
+	*b = 35
+	fmt.Printf("%d did *b=35 which changed the value stored at  its address where a is pointing to and the address of where  it is stored %d\n", a, b)
+
 }
