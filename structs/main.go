@@ -31,7 +31,7 @@ func (p Person) greet() string {
 
 func (p *Person) hasBirthday() {
 	fmt.Print(p)
-	p.age++
+	// p.age++
 }
 
 func main() {
